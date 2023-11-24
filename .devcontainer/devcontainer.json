@@ -33,7 +33,7 @@
   // "forwardPorts": [],
 
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "rustup toolchain install 1.70.0 -c clippy rustfmt",
+  "postCreateCommand": "rustup toolchain install 1.70.0 -c clippy rustfmt && sleep 5 && cargo install cargo-compete cargo-member",
 
   // Configure tool-specific properties.
   "customizations": {
