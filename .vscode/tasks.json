@@ -1,0 +1,111 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "cargo",
+      "command": "compete",
+      "args": ["login", "atcoder"],
+      "presentation": {
+        "focus": true
+      },
+      "problemMatcher": [],
+      "label": "rust: cargo compete login atcoder"
+    },
+    {
+      "type": "cargo",
+      "command": "compete",
+      "args": ["new", "${input:contest}"],
+      "problemMatcher": [],
+      "label": "rust: cargo compete new"
+    },
+    {
+      "type": "cargo",
+      "command": "compete",
+      "args": ["open"],
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "label": "rust: cargo compete open"
+    },
+    {
+      "type": "cargo",
+      "command": "compete",
+      "args": ["open", "--bin", "${fileBasenameNoExtension}"],
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "label": "rust: cargo compete open --bin"
+    },
+    {
+      "type": "cargo",
+      "command": "compete",
+      "args": ["retrieve", "testcases", "--overwrite"],
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "label": "rust: cargo retrieve testcases --overwrite"
+    },
+    {
+      "type": "cargo",
+      "command": "compete",
+      "args": ["submit", "${fileBasenameNoExtension}"],
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "label": "rust: cargo compete submit"
+    },
+    {
+      "type": "cargo",
+      "command": "compete",
+      "args": ["submit", "--no-test", "${fileBasenameNoExtension}"],
+      "problemMatcher": [],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "label": "rust: cargo compete submit --no-test"
+    },
+    {
+      "type": "cargo",
+      "command": "compete",
+      "args": ["test", "${fileBasenameNoExtension}"],
+      "problemMatcher": [],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "label": "rust: cargo compete test"
+    },
+    {
+      "type": "cargo",
+      "command": "member",
+      "args": ["include", "${input:contest}"],
+      "problemMatcher": [],
+      "label": "rust: cargo member include"
+    },
+    {
+      "dependsOrder": "sequence",
+      "dependsOn": ["rust: cargo compete new", "rust: cargo member include"],
+      "presentation": {
+        "reveal": "silent",
+        "panel": "shared",
+        "clear": true
+      },
+      "problemMatcher": [],
+      "label": "new contest"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "contest",
+      "description": "Contest ID",
+      "type": "promptString"
+    }
+  ]
+}
