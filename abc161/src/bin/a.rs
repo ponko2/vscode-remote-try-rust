@@ -2,5 +2,9 @@ use proconio::{fastout, input};
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        (x, y, z): (usize, usize, usize),
+    }
+
+    println!("{z} {x} {y}");
 }
