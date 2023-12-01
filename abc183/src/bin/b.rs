@@ -2,5 +2,9 @@ use proconio::{fastout, input};
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        (sx, sy, gx, gy): (f64, f64, f64, f64),
+    }
+
+    println!("{}", (gy * sx + sy * gx) / (sy + gy));
 }
