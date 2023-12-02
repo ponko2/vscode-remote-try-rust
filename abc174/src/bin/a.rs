@@ -2,5 +2,9 @@ use proconio::{fastout, input};
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        x: isize,
+    }
+
+    println!("{}", if x >= 30 { "Yes" } else { "No" });
 }
