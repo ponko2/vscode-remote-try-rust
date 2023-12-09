@@ -1,6 +1,10 @@
-use proconio::{fastout, input};
+use proconio::{fastout, input, marker::Chars};
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        (_, s, _): (String, Chars, String),
+    }
+
+    println!("A{}C", s[0]);
 }
