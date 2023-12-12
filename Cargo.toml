@@ -6,7 +6,7 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [workspace]
-members = ["practice", "abc161", "abc184", "abc172", "abc182", "abc186", "abc176", "abc163", "abc183", "abc168", "abc178", "abc152", "abc174", "abc164", "abc181", "abc177", "abc165", "abc170", "abc185", "abc180", "abc171", "abc175", "abc214", "abc166", "abc160", "abc179", "abc192", "abc085", "abc045", "abc044", "abc043", "abc048", "abc065", "abc261"]
+members = ["practice", "abc161", "abc184", "abc172", "abc182", "abc186", "abc176", "abc163", "abc183", "abc168", "abc178", "abc152", "abc174", "abc164", "abc181", "abc177", "abc165", "abc170", "abc185", "abc180", "abc171", "abc175", "abc214", "abc166", "abc160", "abc179", "abc192", "abc085", "abc045", "abc044", "abc043", "abc048", "abc065", "abc261", "abc259"]
 exclude = []
 
 [dependencies]
