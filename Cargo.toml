@@ -7,6 +7,7 @@ edition = "2021"
 
 [workspace]
 members = [
+  "abc024",
   "abc025",
   "abc026",
   "abc027",
