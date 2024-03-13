@@ -1,6 +1,14 @@
-use proconio::{fastout, input};
+use proconio::{
+    fastout, input,
+    marker::{Chars, Usize1},
+};
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        s: Chars,
+        i: Usize1,
+    }
+
+    println!("{}", s[i]);
 }
