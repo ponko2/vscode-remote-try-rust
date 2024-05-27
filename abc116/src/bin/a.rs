@@ -2,5 +2,9 @@ use proconio::{fastout, input};
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        (ab, bc, _ca): (usize, usize, usize),
+    }
+
+    println!("{}", ab * bc / 2);
 }
