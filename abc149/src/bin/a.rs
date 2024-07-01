@@ -2,5 +2,9 @@ use proconio::{fastout, input};
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        (s, t): (String, String),
+    }
+
+    println!("{t}{s}");
 }
