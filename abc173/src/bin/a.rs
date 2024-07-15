@@ -2,5 +2,9 @@ use proconio::{fastout, input};
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        n: usize,
+    }
+
+    println!("{}", (10000 - n) % 1000);
 }
