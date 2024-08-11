@@ -85,7 +85,7 @@
     {
       "type": "cargo",
       "command": "member",
-      "args": ["include", "${input:contest}"],
+      "args": ["include", "contests/${input:contest}"],
       "problemMatcher": [],
       "label": "rust: cargo member include"
     },
