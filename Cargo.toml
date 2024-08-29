@@ -233,6 +233,7 @@ members = [
   "contests/abc225",
   "contests/abc226",
   "contests/abc227",
+  "contests/abc228",
   "contests/abc259",
   "contests/abc261",
   "contests/abc291",
