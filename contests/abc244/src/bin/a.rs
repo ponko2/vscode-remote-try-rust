@@ -2,5 +2,10 @@ use proconio::{fastout, input};
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        _: usize,
+        s: String,
+    }
+
+    println!("{}", s.chars().last().unwrap());
 }
