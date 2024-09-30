@@ -2,5 +2,9 @@ use proconio::{fastout, input};
 
 #[fastout]
 fn main() {
-    input! {}
+    input! {
+        n: String,
+    }
+
+    println!("{}", &n[1..]);
 }
